@@ -15,7 +15,7 @@
 
 
 //debug
-const OBLOQ_DEBUG = false
+const OBLOQ_DEBUG = true
 const OBLOQ_MQTT_DEFAULT_SERVER = true
 //DFRobot easy iot
 const OBLOQ_MQTT_EASY_IOT_SERVER_CHINA = "iot.dfrobot.com.cn"
