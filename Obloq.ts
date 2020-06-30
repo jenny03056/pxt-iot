@@ -1151,7 +1151,7 @@ namespace Obloq {
         if (!OBLOQ_SERIAL_INIT) {
             Obloq_serial_init()
         }
-        obloqWriteString("|4|1|3|" + "mcs//D30upcLK//5Njv2I8zDe93udZK//STATUS" + "|" + ",,133" + "|\r")
+        obloqWriteString("|4|1|3|" + "mcs//:D30upcLK//:5Njv2I8zDe93udZK//:STATUS" + "|" + ",,133" + "|\r")
     }
 
     /**
@@ -1272,11 +1272,6 @@ namespace Obloq {
         } else if (item.indexOf("|4|1|3|1|", 0) != -1) {
             OBLOQ_ANSWER_CMD = "PulishOk"
             OBLOQ_ANSWER_CONTENT = OBLOQ_STR_TYPE_IS_NONE
-            return
-        } else if (item.indexOf("|4|1|3|2|", 0) != -1) {
-            OBLOQ_ANSWER_CMD = "PulishFailure"
-            OBLOQ_ANSWER_CONTENT = OBLOQ_STR_TYPE_IS_NONE
-            OBLOQ_WRONG_TYPE = "mqtt pulish failure"
             return
         } else if (item.indexOf("|4|1|4|1|", 0) != -1) {
             OBLOQ_ANSWER_CMD = "MqttDisconnected"
