@@ -1151,7 +1151,7 @@ namespace Obloq {
         if (!OBLOQ_SERIAL_INIT) {
             Obloq_serial_init()
         }
-        obloqWriteString("|4|1|3|" + "mcs//:D30upcLK//:5Njv2I8zDe93udZK//:STATUS" + "|" + ",,133" + "|\r")
+        obloqWriteString("|4|1|3|" + OBLOQ_MQTT_TOPIC[0][0] + "|" + mess + "|\r")
     }
 
     /**
