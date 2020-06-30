@@ -990,7 +990,7 @@ namespace Obloq {
         if (!OBLOQ_SERIAL_INIT) {
             Obloq_serial_init()
         }
-        obloqWriteString("|4|1|1|" + OBLOQ_MQTT_SERVER + "|" + OBLOQ_MQTT_PORT + "|" + OBLOQ_MQTT_ID + "|" + OBLOQ_MQTT_PWD + "|\r")
+        obloqWriteString("|4|1|1|" + OBLOQ_MQTT_SERVER + "|" + OBLOQ_MQTT_PORT + "|\r")
     }
 
 
