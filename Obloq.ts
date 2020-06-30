@@ -1273,6 +1273,11 @@ namespace Obloq {
             OBLOQ_ANSWER_CMD = "PulishOk"
             OBLOQ_ANSWER_CONTENT = OBLOQ_STR_TYPE_IS_NONE
             return
+        } else if (item.indexOf("|4|1|3|2|", 0) != -1) {
+            OBLOQ_ANSWER_CMD = "PulishFailure"
+            OBLOQ_ANSWER_CONTENT = OBLOQ_STR_TYPE_IS_NONE
+            OBLOQ_WRONG_TYPE = "mqtt pulish failure"
+            return
         } else if (item.indexOf("|4|1|4|1|", 0) != -1) {
             OBLOQ_ANSWER_CMD = "MqttDisconnected"
             OBLOQ_ANSWER_CONTENT = OBLOQ_STR_TYPE_IS_NONE
